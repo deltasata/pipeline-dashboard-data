@@ -1,0 +1,291 @@
+{
+ "schema": 1,
+ "runs": [
+  {
+   "generated_utc": "2026-11-21T15:51:38Z",
+   "trigger": "operator",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 16.7,
+    "categories_alerce": 2.84,
+    "A": 2.92,
+    "B": 2.12,
+    "C": 1.06,
+    "total": 22.8
+   }
+  },
+  {
+   "generated_utc": "2026-11-21T15:52:13Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 8.57,
+    "categories_alerce": 2.27,
+    "A": 2.65,
+    "B": 3.26,
+    "C": 3.81,
+    "total": 18.29
+   }
+  },
+  {
+   "generated_utc": "2026-11-21T15:55:25Z",
+   "trigger": "visitor",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 8.08,
+    "categories_alerce": 2.21,
+    "A": 2.62,
+    "B": 1.77,
+    "C": 0.89,
+    "total": 13.36
+   }
+  },
+  {
+   "generated_utc": "2026-11-21T17:44:50Z",
+   "trigger": "operator",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 9.09,
+    "categories_alerce": 5.69,
+    "A": 2.89,
+    "B": 1.88,
+    "C": 0.93,
+    "total": 14.79
+   }
+  },
+  {
+   "generated_utc": "2026-11-21T19:59:41Z",
+   "trigger": "operator",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 8.8,
+    "categories_alerce": 2.73,
+    "A": 2.83,
+    "B": 1.86,
+    "C": 0.91,
+    "total": 14.4
+   }
+  },
+  {
+   "generated_utc": "2026-11-21T23:03:49Z",
+   "trigger": "visitor",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 8.25,
+    "categories_alerce": 2.72,
+    "A": 3.26,
+    "B": 1.8,
+    "C": 0.91,
+    "total": 14.22
+   }
+  },
+  {
+   "generated_utc": "2026-11-22T08:12:16Z",
+   "trigger": "visitor",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 8.65,
+    "categories_alerce": 3.7,
+    "A": 2.8,
+    "B": 1.86,
+    "C": 0.9,
+    "total": 14.21
+   }
+  },
+  {
+   "generated_utc": "2026-11-23T08:14:08Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 9.02,
+    "categories_alerce": 4.49,
+    "A": 3.03,
+    "B": 2.59,
+    "C": 2.87,
+    "total": 17.51
+   }
+  },
+  {
+   "generated_utc": "2026-11-24T08:20:10Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 22.53,
+    "categories_alerce": 5.63,
+    "A": 3.11,
+    "B": 3.83,
+    "C": 4.51,
+    "total": 33.98
+   }
+  },
+  {
+   "generated_utc": "2026-11-25T08:25:33Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 20.56,
+    "categories_alerce": 3.97,
+    "A": 2.95,
+    "B": 4.26,
+    "C": 4.42,
+    "total": 32.19
+   }
+  },
+  {
+   "generated_utc": "2026-11-26T08:30:28Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 14.93,
+    "categories_alerce": 4.54,
+    "A": 3.0,
+    "B": 4.04,
+    "C": 3.68,
+    "total": 25.65
+   }
+  },
+  {
+   "generated_utc": "2026-11-27T08:36:19Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 78,
+    "B": 82,
+    "C": 175
+   },
+   "timings_s": {
+    "A0": 19.28,
+    "categories_alerce": 3.95,
+    "A": 3.63,
+    "B": 3.68,
+    "C": 3.43,
+    "total": 30.02
+   }
+  },
+  {
+   "generated_utc": "2026-11-28T08:41:22Z",
+   "trigger": "scheduled",
+   "status": "ok",
+   "window_start_utc": "2026-11-15T00:00:00Z",
+   "window_end_utc": "2026-11-16T00:00:00Z",
+   "shifted": true,
+   "counts": {
+    "A0": 138867,
+    "A": 79,
+    "B": 83,
+    "C": 186
+   },
+   "timings_s": {
+    "A0": 8.75,
+    "categories_alerce": 3.71,
+    "A": 2.8,
+    "B": 6.63,
+    "C": 19.48,
+    "total": 37.66
+   }
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "schema": 1,
+ "generated_utc": "2026-11-28T08:41:05Z",
+ "kind": "measured once each, one evening, one machine; broker speed varies",
+ "full_size": "Part A on a 100-day window; Parts B and C on October's Set A (28,614 objects) and Set B (32,193 objects, 104,949 alerts)",
+ "rows": [
+  {
+   "step": "A",
+   "route": "Lasair + Sherlock",
+   "input": "100-day window",
+   "output": "28,625 objects",
+   "seconds": 7.2,
+   "requests": "3 Lasair calls",
+   "measured": "2026-09-09",
+   "note": "",
+   "minutes": 0.12
+  },
+  {
+   "step": "B",
+   "route": "Pitt-Google, Method 1 (object positions)",
+   "input": "28,614 objects",
+   "output": "4,054 pairs",
+   "seconds": 181,
+   "requests": "1 query, 0.38 GiB read",
+   "measured": "2026-11-15",
+   "note": "the default",
+   "minutes": 3.02
+  },
+  {
+   "step": "B",
+   "route": "Pitt-Google, Method 2 (every alert position)",
+   "input": "28,614 objects",
+   "output": "4,084 pairs",
+   "seconds": 194,
+   "requests": "1 query, 0.49 GiB read",
+   "measured": "2026-11-15",
+   "note": "",
+   "minutes": 3.23
+  },
+  {
+   "step": "B",
+   "route": "Babamul, Method 1",
+   "input": "28,614 objects",
+   "output": "4,164 pairs",
+   "seconds": 259,
+   "requests": "62 requests",
+   "measured": "2026-11-15",
+   "note": "Babamul's object position is that of its first alert",
+   "minutes": 4.32
+  },
+  {
+   "step": "B",
+   "route": "Babamul, Method 2",
+   "input": "28,614 objects",
+   "output": "4,197 pairs",
+   "seconds": 281,
+   "requests": "64 requests",
+   "measured": "2026-11-15",
+   "note": "every pair Pitt-Google found, plus newer ones",
+   "minutes": 4.68
+  },
+  {
+   "step": "B",
+   "route": "ALeRCE",
+   "input": "2,983 objects",
+   "output": "986 pairs",
+   "seconds": 209,
+   "requests": "17 requests",
+   "measured": "2026-11-15",
+   "note": "smaller Set A; paced to respect ALeRCE's limits",
+   "minutes": 3.48
+  },
+  {
+   "step": "B",
+   "route": "Fink, one search per object",
+   "input": "28,625 objects",
+   "output": "Set B 32,200 objects",
+   "seconds": 1200,
+   "requests": "28,625 requests",
+   "measured": "2026-09-10",
+   "note": "Fink asks that this be rare; refused above 10,000 objects",
+   "minutes": 20.0
+  },
+  {
+   "step": "B",
+   "route": "Fink, uploaded catalogue",
+   "input": "Set A positions",
+   "output": "same Set B",
+   "seconds": null,
+   "requests": "1 job, submitted by hand",
+   "measured": null,
+   "note": "a web form; time not measured",
+   "minutes": null
+  },
+  {
+   "step": "C-lightcurves",
+   "route": "ALeRCE",
+   "input": "32,193 objects",
+   "output": "105,385 alerts",
+   "seconds": 15,
+   "requests": "",
+   "measured": "2026-11-15",
+   "note": "",
+   "minutes": 0.25
+  },
+  {
+   "step": "C-lightcurves",
+   "route": "Babamul",
+   "input": "32,193 objects",
+   "output": "104,949 alerts",
+   "seconds": 38,
+   "requests": "",
+   "measured": "2026-11-15",
+   "note": "",
+   "minutes": 0.63
+  },
+  {
+   "step": "C-lightcurves",
+   "route": "Pitt-Google",
+   "input": "32,193 objects",
+   "output": "104,949 alerts",
+   "seconds": 72,
+   "requests": "1 query, 1.74 GiB read",
+   "measured": "2026-11-15",
+   "note": "",
+   "minutes": 1.2
+  },
+  {
+   "step": "C-lightcurves",
+   "route": "Fink",
+   "input": "32,193 objects",
+   "output": "104,731 alerts",
+   "seconds": 324,
+   "requests": "",
+   "measured": "2026-11-15",
+   "note": "",
+   "minutes": 5.4
+  },
+  {
+   "step": "C-stamps",
+   "route": "Babamul",
+   "input": "104,949 alerts",
+   "output": "104,949 alerts, 5.15 GB",
+   "seconds": 671,
+   "requests": "12 x 100 alerts at once",
+   "measured": "2026-11-15",
+   "note": "fastest; images plus uncertainty and PSF",
+   "minutes": 11.18
+  },
+  {
+   "step": "C-stamps",
+   "route": "Lasair",
+   "input": "104,949 alerts",
+   "output": "104,940 alerts, 1.26 GB",
+   "seconds": 833,
+   "requests": "16 connections",
+   "measured": "2026-11-15",
+   "note": "the default; 9 gaps filled from ALeRCE",
+   "minutes": 13.88
+  },
+  {
+   "step": "C-stamps",
+   "route": "ALeRCE",
+   "input": "300 alerts (sample)",
+   "output": "300 alerts",
+   "seconds": 458,
+   "requests": "one at a time, paced",
+   "measured": "2026-11-15",
+   "note": "used only to fill gaps",
+   "minutes": 7.63
+  },
+  {
+   "step": "C-stamps",
+   "route": "Fink",
+   "input": "2,799 alerts (sample)",
+   "output": "2,790 alerts",
+   "seconds": 709,
+   "requests": "one per alert",
+   "measured": "2026-09-09",
+   "note": "not used for full sets: too many requests for Fink",
+   "minutes": 11.82
+  },
+  {
+   "step": "C-forced",
+   "route": "ALeRCE forced photometry",
+   "input": "3,780 objects",
+   "output": "9,476 measurements",
+   "seconds": 5,
+   "requests": "",
+   "measured": "2026-11-15",
+   "note": "",
+   "minutes": 0.08
+  },
+  {
+   "step": "stream",
+   "route": "exposure to message in the Lasair/Fink stream",
+   "input": "2,644 messages",
+   "output": "",
+   "seconds": 270,
+   "requests": "",
+   "measured": "2026-11-15",
+   "note": "4 to 5.5 minutes; batch medians 240-331 s",
+   "minutes": 4.5
+  },
+  {
+   "step": "stream",
+   "route": "Parts A+B+C on one stream batch (Babamul)",
+   "input": "a few-minute batch",
+   "output": "",
+   "seconds": 4.5,
+   "requests": "",
+   "measured": "2026-11-15",
+   "note": "2 to 7 s per batch",
+   "minutes": 0.07
+  }
+ ],
+ "full_alerts_best": {
+  "route": "Babamul",
+  "alerts": 104949,
+  "seconds": 671.0,
+  "measured": "2026-11-15",
+  "how": "12 requests of 100 alerts at once; per alert: science, template and difference images plus uncertainty and PSF"
+ },
+ "live": "each dashboard run's own times are in latest.json (routes, timings_s) and history.json"
+}

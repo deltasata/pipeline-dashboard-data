@@ -1,0 +1,306 @@
+{
+ "window": {
+  "start_utc": "2026-11-15T00:00:00Z",
+  "end_utc": "2026-11-16T00:00:00Z",
+  "hours": 24.0,
+  "days": 1,
+  "shifted": true,
+  "days_skipped": 13,
+  "reached_min": true,
+  "note": "LSST is operating with limited capacity for maintenance, so reduced alerts: the window was moved back and/or widened.",
+  "rule": "the latest UTC day with enough alerts, widened by whole days until more than 100,000"
+ },
+ "counts": {
+  "A0": 138867,
+  "A": 79,
+  "B": 83,
+  "C": 186
+ },
+ "units": {
+  "A0": "alerts",
+  "A": "objects",
+  "B": "objects",
+  "C": "alerts"
+ },
+ "routes": [
+  {
+   "step": "A0",
+   "route": "Pitt-Google (BigQuery) alert counts",
+   "count": 138867,
+   "unit": "alerts",
+   "seconds": 8.75,
+   "status": "ok"
+  },
+  {
+   "step": "A",
+   "route": "Lasair + Sherlock",
+   "count": 79,
+   "unit": "objects",
+   "seconds": 2.8,
+   "status": "ok",
+   "requests": 1
+  },
+  {
+   "step": "B",
+   "route": "Pitt-Google (BigQuery), Method 1 (object positions), pairs",
+   "count": 83,
+   "unit": "objects",
+   "seconds": 6.63,
+   "status": "ok"
+  },
+  {
+   "step": "C",
+   "route": "light curves, Pitt-Google",
+   "count": 186,
+   "unit": "alerts",
+   "seconds": 19.48,
+   "status": "ok"
+  }
+ ],
+ "categories": [
+  {
+   "name": "asteroid (solar-system) alerts",
+   "count": 30900,
+   "unit": "alerts",
+   "group": "kind",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "u band",
+   "count": 0,
+   "unit": "alerts",
+   "group": "band",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "g band",
+   "count": 1156,
+   "unit": "alerts",
+   "group": "band",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "r band",
+   "count": 53979,
+   "unit": "alerts",
+   "group": "band",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "i band",
+   "count": 83200,
+   "unit": "alerts",
+   "group": "band",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "z band",
+   "count": 532,
+   "unit": "alerts",
+   "group": "band",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "y band",
+   "count": 0,
+   "unit": "alerts",
+   "group": "band",
+   "source": "Pitt-Google (BigQuery)"
+  },
+  {
+   "name": "bogus",
+   "count": 26962,
+   "unit": "objects",
+   "group": "ALeRCE stamp classifier (beta)",
+   "source": "ALeRCE"
+  },
+  {
+   "name": "AGN",
+   "count": 7123,
+   "unit": "objects",
+   "group": "ALeRCE stamp classifier (beta)",
+   "source": "ALeRCE"
+  },
+  {
+   "name": "asteroid",
+   "count": 6904,
+   "unit": "objects",
+   "group": "ALeRCE stamp classifier (beta)",
+   "source": "ALeRCE"
+  },
+  {
+   "name": "VS",
+   "count": 2187,
+   "unit": "objects",
+   "group": "ALeRCE stamp classifier (beta)",
+   "source": "ALeRCE"
+  },
+  {
+   "name": "SN",
+   "count": 535,
+   "unit": "objects",
+   "group": "ALeRCE stamp classifier (beta)",
+   "source": "ALeRCE"
+  }
+ ],
+ "set_a_by_sherlock_class": {
+  "ORPHAN": 52,
+  "SN": 23,
+  "UNCLEAR": 4
+ },
+ "set_b_detail": {
+  "objects": 83,
+  "set_a_objects_with_companion": 4,
+  "companions_outside_set_a": 4,
+  "set_a_objects_alone": 75,
+  "pairs": 4,
+  "groups_of_two_or_more": 4,
+  "largest_group": 2,
+  "radius_arcsec": 10.0,
+  "time_gap_days_max": 100.0,
+  "method": "Method 1 (object positions)"
+ },
+ "timings_s": {
+  "A0": 8.75,
+  "categories_alerce": 3.71,
+  "A": 2.8,
+  "B": 6.63,
+  "C": 19.48,
+  "total": 37.66
+ },
+ "forecast_full_alerts": {
+  "alerts": 186,
+  "kind": "forecast (arithmetic on a measured rate), not downloaded",
+  "best": {
+   "route": "Babamul",
+   "seconds": 1.2,
+   "alerts_per_second": 156.4,
+   "based_on": "104,949 alerts in 671 s, measured 2026-11-15"
+  },
+  "others": [
+   {
+    "route": "Lasair",
+    "seconds": 1.5,
+    "alerts_per_second": 126.0,
+    "based_on": "104,940 alerts in 833 s, measured 2026-11-15"
+   }
+  ],
+  "note": "for a few hundred alerts the start-up of the connections, not the rate, sets the time; the forecast is then too low"
+ },
+ "daily_alerts": [
+  {
+   "date": "2026-11-15",
+   "alerts": 138867,
+   "in_window": true,
+   "skipped": false
+  },
+  {
+   "date": "2026-11-16",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-17",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-18",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-19",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-20",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-21",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-22",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-23",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-24",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-25",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-26",
+   "alerts": null,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-27",
+   "alerts": 23404,
+   "in_window": false,
+   "skipped": true
+  },
+  {
+   "date": "2026-11-28",
+   "alerts": 3861,
+   "in_window": false,
+   "skipped": true
+  }
+ ],
+ "a0_source": "Pitt-Google (BigQuery)",
+ "notes": [],
+ "schema": 1,
+ "generated_utc": "2026-11-28T08:41:22Z",
+ "trigger": "scheduled",
+ "next_visitor_run_possible_utc": "2026-11-28T11:40:21Z",
+ "status": "ok",
+ "error": null,
+ "last_good_utc": "2026-11-28T08:41:05Z",
+ "next_run_utc": "2026-11-29T08:41:22Z",
+ "schedule": {
+  "automatic_every_hours": 24.0,
+  "min_hours_between_runs": 3.0,
+  "visitor_cheap_runs": "on click; up to 10 in 5 min"
+ },
+ "public_sources": [
+  {
+   "label": "Rubin alert production (Grafana)",
+   "url": "https://grafana.slac.stanford.edu/public-dashboards/26d8f1d4d48c40e9b9d9b490b43b7943",
+   "alert_values_sum_24h": 6423531,
+   "alert_servers_up": 12,
+   "alert_servers": 12,
+   "note": "read from the board's own panels: 'Alerts in plotting interval' summed over 24 h, and how many of the alert distribution servers report up",
+   "fetched_utc": "2026-11-28T08:41:23Z"
+  },
+  {
+   "label": "Fink nightly statistics (browser-readable)",
+   "url": "https://api.lsst.fink-portal.org/api/v1/statistics"
+  }
+ ]
+}
